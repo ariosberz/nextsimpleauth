@@ -1,7 +1,11 @@
 import { Alert, AlertIcon } from "@chakra-ui/react";
 import React from "react";
 
-const FormError = ({ supabaseError }) => {
+ interface SupabaseError {
+    supabaseError: string | null;
+}
+
+const FormError = ({ supabaseError }: SupabaseError) => {
     switch (supabaseError) {
         case "Invalid login credentials":
             return (

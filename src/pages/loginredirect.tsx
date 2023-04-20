@@ -3,16 +3,16 @@ import { useRouter } from "next/router";
 import React, { useEffect } from "react";
 
 const loginredirect = () => {
-    const user = useUser();
-    const router = useRouter();
+  const user = useUser();
+  const router = useRouter();
 
-    useEffect(() => {
-        if (user) {
-            router.push("/dashboard");
-        }
-    }, [user]);
+  useEffect(() => {
+    if (user) {
+      router.push("/dashboard");
+    }
+  }, [user]);
 
-    return <></>;
+  return <></>;
 };
 
 export default loginredirect;
